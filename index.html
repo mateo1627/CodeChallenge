@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code challenge</title>
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>
-        Formulario de registro
-    </h1>
-<form id="formDeRegistro">
-    <input type="text" id="valueNombre" placeholder="Nombre">
-
-    <input type="text" id="valueApellido" placeholder="Apellido">
-
-    <input type="date" id="valueFecha" placeholder="Fecha de nacimiento">
-
-    <button onclick="fetchAPIForm()" type="button">Enviar</button>
-</form>
-
+    <h1>Formulario de Registro</h1>
+    <form id="registrationForm">
+        <br>
+        <label for="nombre"><strong>Nombre:</strong></label>
+        <input type="text" id="nombre" name="nombre" required><br>
+<br>
+        <label for="apellido"><strong>Apellido:</strong></label>
+        <input type="text" id="apellido" name="apellido" required><br>
+<br>
+<label  id="fecha" for="fechaNacimiento"><strong>Fecha de Nacimiento:</strong></label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br>
+<br>
+        <button type="button" class="btn btn-success" id="submitBtn">Registrarse</button>
+    </form>
 
     <script src="script.js"></script>
 </body>
 </html>
+

@@ -1,0 +1,13 @@
+body {
+    background: skyblue;
+    text-align: center;
+}
+
+#fechaNacimiento {
+    position: relative; 
+    left: -65px;
+}
+#fecha {
+    position: relative; 
+    left: -65px;
+}
